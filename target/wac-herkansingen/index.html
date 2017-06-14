@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les5</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body onload="initpage();">
+    <div id="frame">
+        <div id="myLocation" class="col-sm-3">
+			<h3>Practicum 1 - Mijn locatiegegevens</h3>
+			<ul>
+				<li><label id="as">As: </label></li>
+				<li><label id="city">City: </label></li>
+				<li><label id="country">Country: </label></li>
+				<li><label id="countryCode">Country code: </label></li>
+				<li><label id="isp">ISP: </label></li>
+				<li><label id="lat">Lat: </label></li>
+				<li><label id="lon">Lon: </label></li>
+				<li><label id="org">ORG: </label></li>
+				<li><label id="query">Query: </label></li>
+				<li><label id="region">Region: </label></li>
+				<li><label id="regionName">Region name: </label></li>
+				<li><label id="status">Status: </label></li>
+				<li><label id="timezone">Timezone: </label></li>
+				<li><label id="zip">Zip: </label></li>
+			</ul>
+		</div>
+        <div id="weatherInfo" class="col-sm-3">
+			<h3>Practicum 2 - Het weergegevens</h3>
+			<ul>
+				<li><label id="main"></label></li>
+				<li><label id="celcius"></label></li>
+				<li><label id="snelheid"></label></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			
+			<button type="button" class="btn btn-primary" id="reset" onclick="resetWeather();">Reset</button>
+		</div>
+        <div id="countryList" class="col-sm-6">
+			<h3>Practicum 3 - Landgegevens</h3>
+			<table id="records_table" class="table">
+				<thead>
+					<tr>
+						<th>Landcode</th>
+						<th>Land</th>
+						<th>Regio</th>
+						<th>Oppervlakte</th>
+						<th>Inwoners</th>
+						<th>Latitude</th>
+						<th>Longitude</th>
+					</tr>
+				</thead>
+				<tbody id="tablebody"></tbody>
+
+			</table>
+		</div>
+    </div>
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

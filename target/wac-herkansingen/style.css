@@ -1,0 +1,25 @@
+html {
+	
+}
+
+#myLocation, #weatherInfo, #countryList {
+	background: #d4f2f8;
+	margin: 12px;
+	border-radius: 10px;
+	padding: 17px;
+	box-shadow: 1px 5px 5px #888888;
+	border: 1px solid #38a7a3;
+}
+
+#tablebody tr:hover {
+	background: white;
+	cursor: pointer;
+}
+
+#frame label {
+	
+}
+
+ul li {
+	list-style: none;
+}
